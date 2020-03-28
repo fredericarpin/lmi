@@ -10,12 +10,10 @@ class TCPTimeClient
   end
 
   def send_request(request)
-    # begin
-      socket = TCPSocket.new(self.hostname, self.port_number)
-      socket.write(request)
-      socket.gets
-    # rescue Exception
-      # puts "Unable to connect to #{self.hostname}:#{self.port_number}"
-    # end
+    socket = TCPSocket.new(self.hostname, self.port_number)
+    socket.write(request)
+    response = socket.gets
+    socket.close
+    return response
   end
 end
