@@ -7,7 +7,7 @@ class CommandProcessor
       # NOTE:
       # Since there was no instructions on what to do in case of
       # an invalid command I've elected to return an error message
-      return "ERROR: Invalid command\n"
+      return "ERROR: Invalid command #{command}\n"
     end
   end
 
