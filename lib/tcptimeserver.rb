@@ -46,8 +46,4 @@ class TCPTimeServer
       end
     end
   end
-
-  def terminate
-
-  end
 end
