@@ -15,12 +15,14 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
     rspec-support (3.9.2)
+    timers (4.3.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   rspec
+  timers
 
 BUNDLED WITH
    2.1.4
